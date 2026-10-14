@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Events xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <Event>
+    <System>
+      <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{00000000-0000-0000-0000-000000000000}" />
+      <EventID Qualifiers="0">4720</EventID>
+      <Version>0</Version>
+      <Level>0</Level>
+      <Task>13824</Task>
+      <TimeCreated SystemTime="2026-10-12T10:00:00.000-04:00" />
+      <EventRecordID>100</EventRecordID>
+      <Channel>Security</Channel>
+      <Computer>DC01.example.test</Computer>
+    </System>
+    <EventData>
+      <Data Name="SubjectUserName">operator-fixture</Data>
+      <Data Name="TargetUserName">created-fixture</Data>
+      <Data Name="NestedPayload"><Part>nested-fixture-value</Part></Data>
+    </EventData>
+  </Event>
+  <Event>
+    <System>
+      <Provider Name="Microsoft-Windows-Security-Auditing" />
+      <EventID>4624</EventID>
+      <Version>2</Version>
+      <TimeCreated SystemTime="2026-10-12T14:01:00Z" />
+      <EventRecordID>101</EventRecordID>
+      <Channel>Security</Channel>
+      <Computer>DC01.example.test</Computer>
+    </System>
+    <EventData>
+      <Data Name="TargetUserName">user-fixture</Data>
+      <Data Name="IpAddress">192.0.2.40</Data>
+      <Data Name="LogonType">3</Data>
+    </EventData>
+  </Event>
+  <Event>
+    <System>
+      <Provider Name="Microsoft-Windows-Security-Auditing" />
+      <EventID>4625</EventID>
+      <Version>0</Version>
+      <TimeCreated SystemTime="2026-10-12T14:02:00.500Z" />
+      <EventRecordID>102</EventRecordID>
+      <Channel>Security</Channel>
+      <Computer>DC01.example.test</Computer>
+    </System>
+    <EventData>
+      <Data Name="TargetUserName">user-fixture</Data>
+      <Data Name="IpAddress">192.0.2.40</Data>
+      <Data Name="LogonType">3</Data>
+      <Data Name="Status">0xC000006D</Data>
+    </EventData>
+  </Event>
+</Events>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Events xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <Event>
+    <System>
+      <Provider Name="Microsoft-Windows-Security-Auditing" />
+      <EventID>4720</EventID>
+      <TimeCreated SystemTime="2026-10-12T14:00:00.000Z" />
+      <EventRecordID>200</EventRecordID>
+      <Channel>Security</Channel>
+      <Computer>DC01.example.test</Computer>
+    </System>
+    <EventData>
+      <Data Name="SubjectUserName">operator-fixture</Data>
+      <Data Name="TargetUserName">created-fixture</Data>
+    </EventData>
+  </Event>
+</Events>

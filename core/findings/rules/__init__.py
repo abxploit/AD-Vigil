@@ -1,0 +1,1 @@
+"""Independent finding rules grouped by security area."""
